@@ -13,7 +13,22 @@ import SearchIcon from "@material-ui/icons/Search";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { Avatar, ListItemAvatar } from "@material-ui/core";
-
+import style from '../NavBar/NavBar.module.css'
+import ListSubheader from '@material-ui/core/ListSubheader';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import Collapse from '@material-ui/core/Collapse';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import DraftsIcon from '@material-ui/icons/Drafts';
+import SendIcon from '@material-ui/icons/Send';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
+import StarBorder from '@material-ui/icons/StarBorder';
+import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
+import LogoNodosNuevo from '../Imagenes/LogoNodosNuevo.png'
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1
@@ -80,28 +95,22 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Nav() {
   const classes = useStyles();
+  const classess = useStyles();
+  const [open, setOpen] = React.useState(true);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="static" className={style.AppBar}>
         <Toolbar>
-
-          <Typography className={classes.title} variant="h6" noWrap>
-            NODOS
-          </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput
-              }}
-              inputProps={{ "aria-label": "search" }}
-            />
-          </div>
+          <Container >
+            <a >
+              <img src={LogoNodosNuevo} alt="img" />
+            </a>
+          </Container>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <h3 style={{ textAlign: 'center' }}>McGonagall,
@@ -109,9 +118,9 @@ export default function Nav() {
               Minerva</h3>
             <ListItemAvatar>
 
-              <Avatar style={{ backgroundColor: 'transparent',marginLeft:'10px', aspectRatio: '1/1', imageRendering: 'crisp-edges', marginTop:'20px' }}>
+              <Avatar style={{ backgroundColor: 'transparent', marginLeft: '10px', aspectRatio: '1/1', imageRendering: 'crisp-edges', marginTop: '20px' }}>
 
-                <a style={{ width: '100%', height: '100%'}}>
+                <a style={{ width: '100%', height: '100%' }}>
                   <img style={{ width: '100%', height: '100%' }} src={logoNodos} alt="IMG" />
                 </a>
               </Avatar>
@@ -119,6 +128,11 @@ export default function Nav() {
           </div>
         </Toolbar>
       </AppBar>
+      <Container className={style.ContainerPadre}>
+
+
+
+      </Container>
     </div>
   );
 }

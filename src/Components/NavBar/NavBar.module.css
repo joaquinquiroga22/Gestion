@@ -1,0 +1,42 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.List{
+    background-color: black;
+}
+.ContainerPadre{
+background-color: #E1DDDD;
+height: 1000px;
+margin: 0 !important;
+padding: 0 !important;
+width: 100% !important;
+max-width: none !important;
+}
+.Container{
+    width: 20% !important;
+  
+    height: 100% !important;
+    /* border: 5px solid black ; */
+}
+.Container2{
+    width: 80% !important;
+    
+}
+/* .BoxImg{
+    width: 100px;
+
+    aspect-ratio: 4/1;
+} */
+/* a{
+
+} */
+a img{
+   
+    width: 25%;
+    
+    aspect-ratio: 3.66/1;
+}
+.AppBar{
+    background-color: #313896 !important;
+}
