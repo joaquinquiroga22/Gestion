@@ -12,7 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import { Avatar, ListItemAvatar } from "@material-ui/core";
+import { Avatar, Grid, ListItemAvatar } from "@material-ui/core";
 import style from '../NavBar/NavBar.module.css'
 import ListSubheader from '@material-ui/core/ListSubheader';
 import List from '@material-ui/core/List';
@@ -42,30 +42,7 @@ const useStyles = makeStyles((theme) => ({
       display: "block"
     }
   },
-  search: {
-    position: "relative",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
-    "&:hover": {
-      backgroundColor: alpha(theme.palette.common.white, 0.25)
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      marginLeft: theme.spacing(3),
-      width: "100ch"
-    }
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
-  },
+
   inputRoot: {
     color: "inherit"
   },
@@ -105,11 +82,14 @@ export default function Nav() {
   return (
     <div className={classes.grow}>
       <AppBar position="static" className={style.AppBar}>
-        <Toolbar>
-          <Container >
+        <Toolbar className={style.Toolbar}>
+          <Container className={style.ContainerImg}>
             <a >
               <img src={LogoNodosNuevo} alt="img" />
             </a>
+          </Container>
+          <Container className={style.h1} >
+            <h3>Gestion Escolar más Simple</h3>
           </Container>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
@@ -129,8 +109,72 @@ export default function Nav() {
         </Toolbar>
       </AppBar>
       <Container className={style.ContainerPadre}>
-
-
+        <Container className={style.BoxGrid}>
+          <Paper className={style.PaperGrid} elevation={15} >
+            <Grid container spacing={1} className={style.Grid} >
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>1</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>2</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>3</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>4</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>5</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>6</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>7</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>8</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>9</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>10</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>11</h1>
+                </Paper>
+              </Grid>
+              <Grid item xs={12}>
+                <Paper>
+                  <h1>12</h1>
+                </Paper>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Container>
 
       </Container>
     </div>
