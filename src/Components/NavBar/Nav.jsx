@@ -104,96 +104,96 @@ export default function Nav() {
             <Grid container spacing={1} className={style.Grid} >
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}} >
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos A</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos B</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos C</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos D</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos E</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos F</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos G</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos H</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos I</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos J</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos K</h3>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
                 <Paper className={style.Grid12} elevation={15}>
-                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
-                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                <Container style={{ width: '70%', height: '80%', borderRadius: '50%', backgroundColor:'white'}}>
+                    <a style={{ width: '100%', height: '100%' }}><img style={{ width: '90px', aspectRatio:'1/1.46' }} src={logoCirculo} alt="img" /></a>
                   </Container>
                   <h3>Colegio Nodos L</h3>
                 </Paper>

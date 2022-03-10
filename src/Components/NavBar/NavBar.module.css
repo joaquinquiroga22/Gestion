@@ -82,6 +82,7 @@ a img{
 }
 .Grid12{
     width: 80%;
+    background-color: #EFEFEF !important;
     color: #024761 !important;
     height: 80%!important;
      border-radius : 30px !important;
