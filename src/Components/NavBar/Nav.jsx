@@ -1,31 +1,14 @@
 
 import React from "react";
-import { alpha, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
-import Badge from "@material-ui/core/Badge";
+import logoCirculo from '../Imagenes/logoCirculo.png'
 import logoNodos from '../Imagenes/logoNodos.png'
-import MenuIcon from "@material-ui/icons/Menu";
-import SearchIcon from "@material-ui/icons/Search";
-import MailIcon from "@material-ui/icons/Mail";
-import NotificationsIcon from "@material-ui/icons/Notifications";
+import LogoNodos2 from '../Imagenes/LogoNodos2.png'
 import { Avatar, Grid, ListItemAvatar } from "@material-ui/core";
 import style from '../NavBar/NavBar.module.css'
-import ListSubheader from '@material-ui/core/ListSubheader';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Collapse from '@material-ui/core/Collapse';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
-import StarBorder from '@material-ui/icons/StarBorder';
+import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import LogoNodosNuevo from '../Imagenes/LogoNodosNuevo.png'
@@ -110,73 +93,126 @@ export default function Nav() {
       </AppBar>
       <Container className={style.ContainerPadre}>
         <Container className={style.BoxGrid}>
-          <Paper className={style.PaperGrid} elevation={15} >
+
+          <Paper className={style.PaperGrid} elevation={15} style={{ borderRadius: '30px' }}>
+
+            <Container className={style.Titulo} >
+              <h3>Apariencias para Libretas</h3>
+              <Divider style={{ backgroundColor: 'black', width: '98%' }} orientation="horizontal" ></Divider>
+              <h4>Elija Colegio:</h4>
+            </Container>
             <Grid container spacing={1} className={style.Grid} >
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>1</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}} >
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos A</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>2</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos B</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>3</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos C</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>4</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos D</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>5</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos E</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>6</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos F</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>7</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos G</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>8</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos H</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>9</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos I</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>10</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos J</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>11</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos K</h3>
                 </Paper>
               </Grid>
-              <Grid item xs={12}>
-                <Paper>
-                  <h1>12</h1>
+              <Grid item xs={12} md={3} sm={6} style={{height:'40%'}}>
+                <Paper className={style.Grid12} elevation={15}>
+                  <Container style={{ width: '60%', height: '70%', borderRadius: '50%' }}>
+                    <a><img style={{ width: '70%', height: '100%' }} src={logoCirculo} alt="img" /></a>
+                  </Container>
+                  <h3>Colegio Nodos L</h3>
                 </Paper>
               </Grid>
             </Grid>
           </Paper>
         </Container>
-
       </Container>
+        <div style={{paddingTop:'10px',display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:'-70px !important', textAlign:'center'}}>
+          
+          <ListItemAvatar>
+            <Avatar>
+              <a style={{ width: '100%', height: '100%' }}><img style={{width:'100%', height:'100%'}}src={LogoNodos2} alt="imagen" /></a>
+            </Avatar>
+          </ListItemAvatar>
+          <div className={style.DivFooter}>
+           <h3 style={{color:'#EE3124', paddingRight:'25px', marginTop:'5px !important'}}>© 2022</h3>
+          </div>
+        </div>
     </div>
   );
 }
