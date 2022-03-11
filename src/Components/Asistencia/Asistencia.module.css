@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box !important;
+
+}
+
+.body{
+    min-height: 1000px !important;
+}
+.AppBar{
+    background-color: #313896;
+}
+.Typography{
+    font-size: 23px !important;
+    margin: 0 auto !important;
+}
+.ContainerMargenIzquierdo{
+    /* margin-top: 62px !important; */
+    border: 0 1px 0 0 !important;
+    width: 20%;
+    height: 100%;
+    
+}
+.List{
+    height: 100vh !important;
+    padding-top:65px !important;
+    background-color: #4CBEA0;
+    border-right: 2px solid white!important;
+}
+.ContainerMargenDerecho{
+    width: 80%;
+    height: 100vh;
+    
+}
+.ContainerBox{
+    display: flex;
+    flex-direction: row ;
+    min-height: 100vh;
+}
+.PaperDerecho{
+    height: 400px;
+    width: 80%;
+    margin: 100px 0 0 10% !important;
+    border-radius: 30px !important;
+}
+.Avatar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px !important;
+}
+.DivFooter h3{
+    padding-right: 20px !important;
+}
+select{
+   
+    height: 100% 
+    !important;
+}

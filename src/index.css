@@ -1,10 +1,21 @@
+@font-face {
+  font-family: 'itc_avant_garde_gothic_demiRg';
+  src: url('itc-avant-garde-gothic-demi-webfont.woff2') format('woff2'),
+       url('itc-avant-garde-gothic-demi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+ 
+}
+
 body {
   margin: 0;
-font-family: "Avant Garde Gothic", "Open Sans", Helvetica, Calibri, sans-serif;
+  font-family: 'itc_avant_garde_gothic_demiRg' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 *{
+  font-family: 'itc_avant_garde_gothic_demiRg' !important;
   margin: 0 !important;
   padding: 0 !important; 
 }
