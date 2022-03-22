@@ -67,8 +67,8 @@ export default function Nav() {
       <AppBar position="static" className={style.AppBar}>
         <Toolbar className={style.Toolbar}>
           <Container className={style.ContainerImg}>
-            <a >
-              <img src={LogoNodosNuevo} alt="img" />
+            <a href="/Evaluaciones">
+              <img src={LogoNodosNuevo} alt="img"  />
             </a>
           </Container>
           <Container className={style.h1} >

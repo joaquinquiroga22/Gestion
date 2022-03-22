@@ -58,3 +58,34 @@ select{
     height: 100% 
     !important;
 }
+.Evaluaciónes{
+    height: 70px !important;
+    border-bottom: 1px solid #24DFAE !important;
+    color:white !important;
+}
+.Evaluaciónes:nth-child(2){
+    padding-left: 30px !important;
+}
+.Evaluaciónes:nth-child(1){
+    padding-left: 30px !important;
+}
+.Evaluaciónes:nth-child(4){
+    padding-left: 30px !important;
+}
+.Evaluaciónes:nth-child(5){
+    padding-left: 30px !important;
+}
+.Evaluaciónes:nth-child(6){
+    padding-left: 30px !important;
+}
+.Despliegue{
+    height: 70px !important;
+    background-color: #24DFAE !important;
+    color: white !important;
+}
+.Despliegue:nth-child(0){
+    padding-left: 10px !important;
+}
+.Despliegue:nth-child(1){
+    padding-left: 10px !important;
+}
