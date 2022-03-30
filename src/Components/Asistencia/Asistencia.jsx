@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import style from './Evaluaciones.module.css'
+import style from '../Asistencia/Asistencia.module.css'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -11,15 +11,14 @@ import Paper from '@material-ui/core/Paper';
 import LogoNodos2 from '../Imagenes/LogoNodos2.png'
 import { Avatar, Grid, ListItemAvatar, Container, Button } from "@material-ui/core";
 import InputLabel from '@material-ui/core/InputLabel';
+import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import ListItemButton from '@mui/material/ListItemButton';
-import Collapse from '@mui/material/Collapse';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-
-
-
+import NativeSelect from '@material-ui/core/NativeSelect';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import Divider from '@material-ui/core/Divider';
+import InboxIcon from '@material-ui/icons/Inbox';
+import DraftsIcon from '@material-ui/icons/Drafts';
 const useStyles = makeStyles((theme) => ({
     root: {
         width: 'auto',
@@ -32,27 +31,19 @@ function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
 }
 
-export default function Evaluaciónes() {
-
-    const [OpenEvaluaciones, SetOpenEvaluaciones] = React.useState(false);
-
-    const handleClickTutores = () => {
-        SetOpenEvaluaciones(!OpenEvaluaciones);
-    };
-
-
+export default function Asistencia() {
     const handleChange = (event) => {
         const name = event.target.name;
         setState({
-            ...state,
-            [name]: event.target.value,
+          ...state,
+          [name]: event.target.value,
         });
-    };
+      };
     const classess = useStyles();
-    const [state, setState] = React.useState({
-        age: '',
-        name: 'hai',
-    });
+  const [state, setState] = React.useState({
+    age: '',
+    name: 'hai',
+  });
     const classes = useStyles();
     return (
         <div className={style.ContainerBox}>
@@ -68,49 +59,16 @@ export default function Evaluaciónes() {
 
 
                     <List component="nav" aria-label="secondary mailbox folders" className={style.List}>
-                        <ListItem button className={style.Evaluaciónes}>
-                            <ListItemText primary="Seleccion de Colegio"  />
+                        <ListItem button>
+                            <ListItemText primary="Trash" />
                         </ListItem>
 
-                        <ListItem button className={style.Evaluaciónes}>
-                            <ListItemText primary="Asistencia" />
-                        </ListItem>
-
-                        <List component="div" disablePadding>
-                            <ListItemButton sx={{ pl: 4 }} onClick={handleClickTutores} className={style.Evaluaciónes}>
-
-                                <ListItemText primary="Evaluaciónes" />
-                                {OpenEvaluaciones ? <ExpandLess /> : <ExpandMore />}
-                            </ListItemButton>
-                            <Collapse in={OpenEvaluaciones} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                    <ListItemButton sx={{ pl: 7 }} className={style.Despliegue}>
-
-                                        <ListItemText primary="Crear Evaluación"/>
-
-                                    </ListItemButton>
-                                </List>
-                            </Collapse>
-                            <Collapse in={OpenEvaluaciones} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                    <ListItemButton sx={{ pl: 7 }} className={style.Despliegue}>
-
-                                        <ListItemText primary="Resumen de Evaluaciónes" />
-
-                                    </ListItemButton>
-                                </List>
-                            </Collapse>
-                        </List>
-                        <ListItem button className={style.Evaluaciónes}>
-                            <ListItemText primary="Calificaciónes" />
-                        </ListItem>
-                        <ListItem button className={style.Evaluaciónes}>
-                            <ListItemText primary="Conducta" />
-                        </ListItem>
-                        <ListItem button className={style.Evaluaciónes}>
-                            <ListItemText primary="Informes" />
-                        </ListItem>
-                       
+                        <ListItemText primary="Spam" />
+                        <ListItemText primary="Spam" />
+                        <ListItemText primary="Spam" />
+                        <ListItemText primary="Spam" />
+                        <ListItemText primary="Spam" />
+                        <ListItemText primary="Spam" />
                     </List>
                 </div>
             </div>
@@ -118,16 +76,16 @@ export default function Evaluaciónes() {
                 <Paper className={style.PaperDerecho} elevation={15}>
 
 
-                    <Container className={style.ContainerGrid}>
+                    <Container>
                         <Grid container>
-                            <Grid item xs={12} sm={6} style={{ width: '80%', height: '80%' }} className={style.GridUnic} >
-                                <Paper style={{ width: '90%', height: '40px' }}>
-                                    <Container style={{ width: '100%', height: '100%' }}>
-                                        <FormControl variant="filled" style={{ width: '100%', height: '100%' }}>
-                                            <InputLabel htmlFor="filled-age-native-simple" style={{ width: '100% ', height: '100% ' }}>Seleccionar Año</InputLabel>
+                            <Grid item xs={12} sm={6} style={{width:'80%', height:'80%'}} >
+                                <Paper style={{width:'90%', height:'40px'}}>
+                                    <Container style={{width:'100%', height:'100%'}}>
+                                        <FormControl variant="filled" style={{width:'100%', height:'100%'}}>
+                                            <InputLabel htmlFor="filled-age-native-simple" style={{width:'100% ', height:'100% '} }>Age</InputLabel>
                                             <Select
-
-
+                                                
+                                                
                                                 native
                                                 value={state.age}
                                                 onChange={handleChange}
@@ -135,7 +93,7 @@ export default function Evaluaciónes() {
                                                     name: 'age',
                                                     id: 'filled-age-native-simple',
                                                 }}
-                                                style={{ height: '100%' }}
+                                                style={{height:'100%'}}
                                             >
                                                 <option aria-label="None" value="" />
                                                 <option value={10}>Ten</option>
@@ -147,14 +105,14 @@ export default function Evaluaciónes() {
                                     </Container>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={12} sm={6} style={{ width: '80%', height: '80%' }} className={style.GridUnic}>
-                                <Paper style={{ width: '90%', height: '40px' }}>
-                                    <Container style={{ width: '100%', height: '100%' }}>
-                                        <FormControl variant="filled" style={{ width: '100%', height: '100%' }}>
-                                            <InputLabel htmlFor="filled-age-native-simple" style={{ width: '100% ', height: '100% ' }}>Division</InputLabel>
+                            <Grid item xs={12} sm={6} style={{width:'80%', height:'80%'}} >
+                                <Paper style={{width:'90%', height:'40px'}}>
+                                    <Container style={{width:'100%', height:'100%'}}>
+                                        <FormControl variant="filled" style={{width:'100%', height:'100%'}}>
+                                            <InputLabel htmlFor="filled-age-native-simple" style={{width:'100% ', height:'100% '} }>Age</InputLabel>
                                             <Select
-
-
+                                                
+                                                
                                                 native
                                                 value={state.age}
                                                 onChange={handleChange}
@@ -162,7 +120,7 @@ export default function Evaluaciónes() {
                                                     name: 'age',
                                                     id: 'filled-age-native-simple',
                                                 }}
-                                                style={{ height: '100%' }}
+                                                style={{height:'100%'}}
                                             >
                                                 <option aria-label="None" value="" />
                                                 <option value={10}>Ten</option>
@@ -174,14 +132,14 @@ export default function Evaluaciónes() {
                                     </Container>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={12} sm={6} style={{ width: '80%', height: '80%' }} className={style.GridUnic} >
-                                <Paper style={{ width: '90%', height: '40px' }}>
-                                    <Container style={{ width: '100%', height: '100%' }}>
-                                        <FormControl variant="filled" style={{ width: '100%', height: '100%' }}>
-                                            <InputLabel htmlFor="filled-age-native-simple" style={{ width: '100% ', height: '100% ' }}>Materia</InputLabel>
+                            <Grid item xs={12} sm={6} style={{width:'80%', height:'80%'}} >
+                                <Paper style={{width:'90%', height:'40px'}}>
+                                    <Container style={{width:'100%', height:'100%'}}>
+                                        <FormControl variant="filled" style={{width:'100%', height:'100%'}}>
+                                            <InputLabel htmlFor="filled-age-native-simple" style={{width:'100% ', height:'100% '} }>Age</InputLabel>
                                             <Select
-
-
+                                                
+                                                
                                                 native
                                                 value={state.age}
                                                 onChange={handleChange}
@@ -189,7 +147,7 @@ export default function Evaluaciónes() {
                                                     name: 'age',
                                                     id: 'filled-age-native-simple',
                                                 }}
-                                                style={{ height: '100%' }}
+                                                style={{height:'100%'}}
                                             >
                                                 <option aria-label="None" value="" />
                                                 <option value={10}>Ten</option>
@@ -201,14 +159,14 @@ export default function Evaluaciónes() {
                                     </Container>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={12} sm={6} style={{ width: '80%', height: '80%' }} className={style.GridUnic} >
-                                <Paper style={{ width: '90%', height: '40px' }}>
-                                    <Container style={{ width: '100%', height: '100%' }}>
-                                        <FormControl variant="filled" style={{ width: '100%', height: '100%' }}>
-                                            <InputLabel htmlFor="filled-age-native-simple" style={{ width: '100% ', height: '100% ' }}>Seleccionar Periodos</InputLabel>
+                            <Grid item xs={12} sm={6} style={{width:'80%', height:'80%'}} >
+                                <Paper style={{width:'90%', height:'40px'}}>
+                                    <Container style={{width:'100%', height:'100%'}}>
+                                        <FormControl variant="filled" style={{width:'100%', height:'100%'}}>
+                                            <InputLabel htmlFor="filled-age-native-simple" style={{width:'100% ', height:'100% '} }>Age</InputLabel>
                                             <Select
-
-
+                                                
+                                                
                                                 native
                                                 value={state.age}
                                                 onChange={handleChange}
@@ -216,7 +174,7 @@ export default function Evaluaciónes() {
                                                     name: 'age',
                                                     id: 'filled-age-native-simple',
                                                 }}
-                                                style={{ height: '100%' }}
+                                                style={{height:'100%'}}
                                             >
                                                 <option aria-label="None" value="" />
                                                 <option value={10}>Ten</option>
@@ -228,24 +186,24 @@ export default function Evaluaciónes() {
                                     </Container>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={12} sm={6} style={{ width: '80%', height: '80%' }} className={style.GridUnic} >
-                                <Paper style={{ width: '90%', height: '40px' }}>
-                                    <Container style={{ width: '100%', height: '100%' }}>
-                                        <Button fullWidth style={{ height: '100%', backgroundColor: '#4CBEA0', color:'white' }} href="/">
-                                            Listar
+                            <Grid item xs={12} sm={6} style={{width:'80%', height:'80%'}} >
+                                <Paper style={{width:'90%', height:'40px'}}>
+                                    <Container style={{width:'100%', height:'100%'}}>
+                                        <Button fullWidth style={{height:'100%', backgroundColor:'#4CBEA0'}}>
+                                          Listar
                                         </Button>
                                     </Container>
                                 </Paper>
                             </Grid>
-
-                            <Grid item xs={12} sm={6} style={{ width: '80%', height: '80%' }} >
-                                <Paper style={{ width: '90%', height: '40px' }}>
-                                    <Container style={{ width: '100%', height: '100%' }}>
-                                        <FormControl variant="filled" style={{ width: '100%', height: '100%' }}>
-                                            <InputLabel htmlFor="filled-age-native-simple" style={{ width: '100% ', height: '100% ' }}>Varones Primero y Apellido</InputLabel>
+                         
+                            <Grid item xs={12} sm={6} style={{width:'80%', height:'80%'}} >
+                                <Paper style={{width:'90%', height:'40px'}}>
+                                    <Container style={{width:'100%', height:'100%'}}>
+                                        <FormControl variant="filled" style={{width:'100%', height:'100%'}}>
+                                            <InputLabel htmlFor="filled-age-native-simple" style={{width:'100% ', height:'100% '} }>Age</InputLabel>
                                             <Select
-
-
+                                                
+                                                
                                                 native
                                                 value={state.age}
                                                 onChange={handleChange}
@@ -253,7 +211,7 @@ export default function Evaluaciónes() {
                                                     name: 'age',
                                                     id: 'filled-age-native-simple',
                                                 }}
-                                                style={{ height: '100%' }}
+                                                style={{height:'100%'}}
                                             >
                                                 <option aria-label="None" value="" />
                                                 <option value={10}>Ten</option>
@@ -265,13 +223,10 @@ export default function Evaluaciónes() {
                                     </Container>
                                 </Paper>
                             </Grid>
-                            {/* <Button style={{ width: '15%', height: '40px', backgroundColor: '#4CBEA0' }}>
+                            {/* <Button style={{width:'15%', height:'40px', backgroundColor:'#4CBEA0'}}>
                                 hola
                             </Button> */}
                         </Grid>
-                <Container className={style.tabla}>
-                   
-                </Container>
                     </Container>
                 </Paper>
 
